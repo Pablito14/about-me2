@@ -1,13 +1,22 @@
+/* html { 
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ } */
+
 body {
     background: #ccc;
 }
 
 header {
-    background: rgb(15, 161, 187);
-    color: rgb(145, 249, 255);
+    background: rgb(77, 176, 194);
     height: 70px;
     line-height: 70px;
-    text-align: center;
 }
 
 main{
@@ -15,22 +24,48 @@ main{
 }
 
 h1{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 h2{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section {
+    background-color: rgba(108, 169, 173, 0.603);
+    /* opacity: 0.5; */
+    border-style: outset;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.centerPiece {
+    text-align: center;
+    /* margin: 10px; */
+}
+
+#welcome {
+    margin: 10px;
+}
+
+/* ol {
+    list-style: ; make this a numbered list
+} */
+
 ul {
     list-style-type: disc;
+    margin: 10px;
 }
 
 footer{
     background: #efefef;
-    color: rgb(57, 202, 166);
     line-height: 30px;
-    text-align: center;
 }
