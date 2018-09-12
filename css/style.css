@@ -1,0 +1,36 @@
+body {
+    background: #ccc;
+}
+
+header {
+    background: rgb(15, 161, 187);
+    color: rgb(145, 249, 255);
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+main{
+    margin: 25px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+footer{
+    background: #efefef;
+    color: rgb(57, 202, 166);
+    line-height: 30px;
+    text-align: center;
+}
