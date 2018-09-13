@@ -11,28 +11,30 @@ console.log('incorrect: ' + incorrect);
 console.log('');
 
 alert('Hey I am kind of holding you against your will until you finish this about me minigame.');
+function q1(){
+  userAns1 = prompt('Am I an artistic person?').toLowerCase(); // ask the question through a prompt, and normalize their answer to lower case
+  console.log('User answer for question 1 is: ' + userAns1); // created a console log to see the users answer for this question
 
-userAns1 = prompt('Am I an artistic person?').toLowerCase(); // ask the question through a prompt, and normalize their answer to lower case
-console.log('User answer for question 1 is: ' + userAns1); // created a console log to see the users answer for this question
+  if(userAns1 === 'y' || userAns1 === 'yes') // If they answer with 'y' OR 'yes'
+  {
+    alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!'); // this alert message will appear
+    incorrect+= 0.5;
+    correct+= 0.5;
+  }
+  else if(userAns1 === 'n' || userAns1 === 'no')
+  {
+    alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!');
+    incorrect+= 0.5;
+    correct+= 0.5;
+  }
+  else // if the user's answer is anything else other than y/n or yes/no
+  {
+    alert(broken); // show the broken message in an alert box
 
-if(userAns1 === 'y' || userAns1 === 'yes') // If they answer with 'y' OR 'yes'
-{
-  alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!'); // this alert message will appear
-  incorrect+= 0.5;
-  correct+= 0.5;
+  }
 }
-else if(userAns1 === 'n' || userAns1 === 'no')
-{
-  alert('I\'ll give you half points for that, I am really creative and inspired but I have not developed anything into any artistic talent yet!');
-  incorrect+= 0.5;
-  correct+= 0.5;
-}
-else // if the user's answer is anything else other than y/n or yes/no
-{
-  alert(broken); // show the broken message in an alert box
 
-}
-
+q1();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
