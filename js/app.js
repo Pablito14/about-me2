@@ -5,7 +5,7 @@ broken = ('Its a yes or no question. Type y or n. You could even type yes or no.
 correct = 0;
 incorrect = 0;
 
-console.log('Correct and incorrect will track the number of answers and their values. They should both start at 0');
+console.log('Correct and incorrect will track the number of their values. They should both start at 0');
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
