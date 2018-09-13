@@ -121,61 +121,65 @@ console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
 
+function q5() {
+  userAns5 = prompt('Am I from kentucky?').toLowerCase();
+  console.log('User answer for question 5 is: ' + userAns5);
 
-userAns5 = prompt('Am I from kentucky?').toLowerCase();
-console.log('User answer for question 5 is: ' + userAns5);
+  if(userAns5 === 'y'|| userAns5 === 'yes')
+  {
+    alert('I am not from Kentucky, I am from Seattle, Washington.');
+    incorrect++;
+  }
+  else if(userAns5 === 'n' || userAns5 === 'no')
+  {
+    alert('You are correct! I am from Seattle, Washington.');
+    correct++;
+  }
+  else
+  {
+    alert(broken);
 
-if(userAns5 === 'y'|| userAns5 === 'yes')
-{
-  alert('I am not from Kentucky, I am from Seattle, Washington.');
-  incorrect++;
+  }
 }
-else if(userAns5 === 'n' || userAns5 === 'no')
-{
-  alert('You are correct! I am from Seattle, Washington.');
-  correct++;
-}
-else
-{
-  alert(broken);
 
-}
-
+q5();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
 
+function q6() {
+  var totAttempts = 4;
+  var rightAns = 60;
+  userAns6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
 
-var totAttempts = 4;
-var rightAns = 60;
-userAns6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
-
-while(totAttempts > 1){
-  if(parseInt(userAns6) === rightAns)
-  {
-    alert('How\'d you know?! You must be a mind-reader!');
-    correct++;
-    totAttempts = 0;
-    break;
-  }
-  else if(userAns6 > rightAns && userAns6 <= 100)
-  {
-    alert('You are aiming too high');
-    totAttempts--;
-    userAns6 = prompt('What is my favorite number?');
-  }
-  else if(userAns6 < rightAns && userAns6 >= 1)
-  {
-    alert('You are going too low!');
-    totAttempts--;
-    userAns6 = prompt('What is my favorite number?');
-  }
-  else{ alert('You have to enter a number between 1 - 100!');
-    userAns6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+  while(totAttempts > 1){
+    if(parseInt(userAns6) === rightAns)
+    {
+      alert('How\'d you know?! You must be a mind-reader!');
+      correct++;
+      totAttempts = 0;
+      break;
+    }
+    else if(userAns6 > rightAns && userAns6 <= 100)
+    {
+      alert('You are aiming too high');
+      totAttempts--;
+      userAns6 = prompt('What is my favorite number?');
+    }
+    else if(userAns6 < rightAns && userAns6 >= 1)
+    {
+      alert('You are going too low!');
+      totAttempts--;
+      userAns6 = prompt('What is my favorite number?');
+    }
+    else{ alert('You have to enter a number between 1 - 100!');
+      userAns6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+    }
   }
 }
 
+q6();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
