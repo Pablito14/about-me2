@@ -1,5 +1,5 @@
 /* html { 
-    background-image: url("");
+    background-image: url("../img/creek.jpg"); For some reason the image won't show up as the background
     background-repeat: no-repeat;
     background-size: cover;
     background-image: 100%;
@@ -39,7 +39,7 @@ h3{
 }
 
 section {
-    background-color: rgba(108, 169, 173, 0.603);
+    background-color: rgba(164, 232, 240, 0.589);
     /* opacity: 0.5; */
     border-style: outset;
     border-color: black;
@@ -57,7 +57,7 @@ section {
 }
 
 /* ol {
-    list-style: ; make this a numbered list
+    
 } */
 
 ul {
