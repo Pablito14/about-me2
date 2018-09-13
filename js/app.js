@@ -6,9 +6,7 @@ correct = 0;
 incorrect = 0;
 
 console.log('Correct and incorrect will track the number of their values. They should both start at 0');
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 alert('Hey I am kind of holding you against your will until you finish this about me minigame.');
 function q1(){
@@ -36,9 +34,7 @@ function q1(){
 
 q1();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 function q2() {
   userAns2 = prompt('Do you think that I have prior experiance to coding other than at the Code Fellows school?').toLowerCase();
@@ -63,9 +59,7 @@ function q2() {
 
 q2();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 function q3() {
   userAns3 = prompt('Do you think I have any tattoos?').toLowerCase();
@@ -90,9 +84,7 @@ function q3() {
 
 q3();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 function q4() {
   userAns4 = prompt('Can I make authentic Mexican food?').toLowerCase();
@@ -117,9 +109,7 @@ function q4() {
 
 q4();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 function q5() {
   userAns5 = prompt('Am I from kentucky?').toLowerCase();
@@ -144,9 +134,7 @@ function q5() {
 
 q5();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
 function q6() {
   var totAttempts = 4;
@@ -181,36 +169,38 @@ function q6() {
 
 q6();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+showScore();
 
+function q7() {
+  var arrayOfHobbies = ['music', 'games', 'excercise', 'nature', 'food', 'cooking', 'exploring', 'culture', 'philosiphy', 'coffee', 'fashion', 'business', 'technology'];
+  var trysLeft = 6;
+  var correctness = false;
 
-var arrayOfHobbies = ['music', 'games', 'excercise', 'nature', 'food', 'cooking', 'exploring', 'culture', 'philosiphy', 'coffee', 'fashion', 'business', 'technology'];
-var trysLeft = 6;
-var correctness = false;
-
-while (trysLeft > 0 && correctness === false)
-{
-  userAns7 = prompt('What are some things that I have interests in?').toLowerCase();
-  if (arrayOfHobbies.includes(userAns7))
+  while (trysLeft > 0 && correctness === false)
   {
-    correctness = true;
-    alert('You are right! Here are all of the I am currently really interested in.' + arrayOfHobbies.join(','));
-    break;
+    userAns7 = prompt('What are some things that I have interests in?').toLowerCase();
+    if (arrayOfHobbies.includes(userAns7))
+    {
+      correctness = true;
+      alert('You are right! Here are all of the I am currently really interested in.' + arrayOfHobbies.join(','));
+      break;
+    }
+    else
+    {
+      trysLeft--;
+      alert('Wrong! Try again,  you have: ' + trysLeft + ' trys left');
+    }
   }
-  else
+  if (trysLeft === 0)
   {
-    trysLeft--;
-    alert('Wrong! Try again,  you have: ' + trysLeft + ' trys left');
+    alert('You ran out of attempts!');
+    alert('Here is all of the things that I have interests in!\n ' + arrayOfHobbies.join(','));
   }
 }
-if (trysLeft === 0)
-{
-  alert('You ran out of attempts!');
-  alert('Here is all of the things that I have interests in!\n ' + arrayOfHobbies.join(','));
-}
+q7();
 
-console.log('correct: ' + correct);
-console.log('incorrect: ' + incorrect);
-console.log('');
+function showScore() {
+  console.log('correct: ' + correct);
+  console.log('incorrect: ' + incorrect);
+  console.log('');
+}
