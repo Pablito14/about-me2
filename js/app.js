@@ -67,26 +67,28 @@ console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
 
+function q3() {
+  userAns3 = prompt('Do you think I have any tattoos?').toLowerCase();
+  console.log('User answer for question 3 is: ' + userAns3);
 
-userAns3 = prompt('Do you think I have any tattoos?').toLowerCase();
-console.log('User answer for question 3 is: ' + userAns3);
+  if(userAns3 === 'y'|| userAns3 === 'yes')
+  {
+    alert('That is correct! I currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
+    correct++;
+  }
+  else if(userAns3 === 'n' || userAns3 === 'no')
+  {
+    alert('You guessed wrong :( \nI currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
+    incorrect++;
+  }
+  else
+  {
+    alert(broken);
 
-if(userAns3 === 'y'|| userAns3 === 'yes')
-{
-  alert('That is correct! I currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
-  correct++;
+  }
 }
-else if(userAns3 === 'n' || userAns3 === 'no')
-{
-  alert('You guessed wrong :( \nI currently have one tattoo that is a quote from the closing lines of the poem Invictus. It was written by William Ernest Henley in 1875 and the closing lines are: \n"I am the master of my fate\n I am the captain of my soul."');
-  incorrect++;
-}
-else
-{
-  alert(broken);
 
-}
-
+q3();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
