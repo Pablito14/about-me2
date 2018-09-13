@@ -94,26 +94,28 @@ console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
 
+function q4() {
+  userAns4 = prompt('Can I make authentic Mexican food?').toLowerCase();
+  console.log('User answer for question 4 is: ' + userAns4);
 
-userAns4 = prompt('Can I make authentic Mexican food?').toLowerCase();
-console.log('User answer for question 4 is: ' + userAns4);
+  if(userAns4 === 'y'|| userAns4 === 'yes')
+  {
+    alert('Correct! This is something that I actually enjoy to do regularly. I will usually cook with my family and we normally make traditional Mexican recipes.');
+    correct++;
+  }
+  else if(userAns4 === 'n' || userAns4 === 'no')
+  {
+    alert('Ouch, that is incorrect... I will usually cook with my family and we normally make traditional Mexican recipes.');
+    incorrect++;
+  }
+  else
+  {
+    alert(broken);
 
-if(userAns4 === 'y'|| userAns4 === 'yes')
-{
-  alert('Correct! This is something that I actually enjoy to do regularly. I will usually cook with my family and we normally make traditional Mexican recipes.');
-  correct++;
+  }
 }
-else if(userAns4 === 'n' || userAns4 === 'no')
-{
-  alert('Ouch, that is incorrect... I will usually cook with my family and we normally make traditional Mexican recipes.');
-  incorrect++;
-}
-else
-{
-  alert(broken);
 
-}
-
+q4();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
