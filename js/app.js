@@ -40,26 +40,28 @@ console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
 console.log('');
 
+function q2() {
+  userAns2 = prompt('Do you think that I have prior experiance to coding other than at the Code Fellows school?').toLowerCase();
+  console.log('User answer for question 2 is: ' + userAns2);
 
-userAns2 = prompt('Do you think that I have prior experiance to coding other than at the Code Fellows school?').toLowerCase();
-console.log('User answer for question 2 is: ' + userAns2);
+  if(userAns2 === 'y'|| userAns2 === 'yes')
+  {
+    alert('You are correct! I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
+    correct++;
+  }
+  else if(userAns2 === 'n' || userAns2 === 'no')
+  {
+    alert('Unfortunately you guessed incorrectly. I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
+    incorrect++;
+  }
+  else
+  {
+    alert(broken);
 
-if(userAns2 === 'y'|| userAns2 === 'yes')
-{
-  alert('You are correct! I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
-  correct++;
+  }
 }
-else if(userAns2 === 'n' || userAns2 === 'no')
-{
-  alert('Unfortunately you guessed incorrectly. I have some experience in Java that I picked up with Arizona State University in their Principles of Programming and Data Structures courses.');
-  incorrect++;
-}
-else
-{
-  alert(broken);
 
-}
-
+q2();
 
 console.log('correct: ' + correct);
 console.log('incorrect: ' + incorrect);
