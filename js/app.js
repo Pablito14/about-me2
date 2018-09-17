@@ -9,6 +9,8 @@ console.log('Correct and incorrect will track the number of their values. They s
 showScore();
 
 alert('Hey I am kind of holding you against your will until you finish this about me minigame.');
+
+
 function q1(){
   userAns1 = prompt('Am I an artistic person?').toLowerCase(); // ask the question through a prompt, and normalize their answer to lower case
   console.log('User answer for question 1 is: ' + userAns1); // created a console log to see the users answer for this question
@@ -28,7 +30,7 @@ function q1(){
   else // if the user's answer is anything else other than y/n or yes/no
   {
     alert(broken); // show the broken message in an alert box
-
+    q1();
   }
 }
 
@@ -53,7 +55,7 @@ function q2() {
   else
   {
     alert(broken);
-
+    q2();
   }
 }
 
@@ -78,7 +80,7 @@ function q3() {
   else
   {
     alert(broken);
-
+    q3();
   }
 }
 
@@ -103,7 +105,7 @@ function q4() {
   else
   {
     alert(broken);
-
+    q4();
   }
 }
 
@@ -128,7 +130,7 @@ function q5() {
   else
   {
     alert(broken);
-
+    q5();
   }
 }
 
@@ -163,6 +165,7 @@ function q6() {
     }
     else{ alert('You have to enter a number between 1 - 100!');
       userAns6 = prompt('What is my favorite number? I\'ll give you a hint its from 1 to 100!');
+      q6();
     }
   }
 }
